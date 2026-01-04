@@ -44,6 +44,7 @@ fun_fact: "I contribute code that's preserved in the Arctic for 1000 years"
   <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" />
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white" />
+  <img src="https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&logo=latex&logoColor=white" />
 </p>
 
 <h3 align="center">Platforms & Tools</h3>
@@ -118,8 +119,8 @@ fun_fact: "I contribute code that's preserved in the Arctic for 1000 years"
       <br/>
       Push-based event delivery replacing epoll input handling - reducing latency, syscall overhead & power consumption
       <br/><br/>
-      <a href="https://github.com/esm-android/kernel-msm-esm">
-        <img src="https://img.shields.io/badge/kernel--msm--esm-Kernel_Mods-ff6b6b?style=flat-square" />
+      <a href="https://github.com/esm-android/esm-manifest">
+        <img src="https://img.shields.io/badge/esm--manifest-Documentation-ff6b6b?style=flat-square" />
       </a>
       <a href="https://github.com/esm-android/esm-testing">
         <img src="https://img.shields.io/badge/esm--testing-Benchmarks-00d9ff?style=flat-square" />
@@ -147,14 +148,14 @@ fun_fact: "I contribute code that's preserved in the Arctic for 1000 years"
       <p align="center">Pure Rust VNC server library with RFC 6143 compliance, async/await via Tokio, and 11 encoding types</p>
     </td>
     <td width="50%">
-      <h3 align="center">kernel-msm-esm</h3>
+      <h3 align="center">esm-manifest</h3>
       <p align="center">
-        <a href="https://github.com/esm-android/kernel-msm-esm">
-          <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white"/>
+        <a href="https://github.com/esm-android/esm-manifest">
+          <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white"/>
         </a>
-        <img src="https://img.shields.io/badge/Linux_Kernel-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
+        <img src="https://img.shields.io/badge/AOSP-3DDC84?style=for-the-badge&logo=android&logoColor=white"/>
       </p>
-      <p align="center">ESM kernel modifications with 4 new syscalls for push-based Android input handling</p>
+      <p align="center">Event Stream Model - push-based input delivery for Android reducing latency & syscall overhead</p>
     </td>
   </tr>
   <tr>
@@ -197,6 +198,22 @@ fun_fact: "I contribute code that's preserved in the Arctic for 1000 years"
 - **ESM-Android** - Developing a push-based event delivery system for Android to reduce latency & syscall overhead
 - **dongadeuce** - Commander open-source platform in Kotlin
 - **Android Kernel Development** - Custom kernel modifications and framework-level enhancements
+
+---
+
+## Resume
+
+<p align="center">
+  <a href="https://github.com/dustinmcafee/resume/blob/main/resume.pdf">
+    <img src="https://img.shields.io/badge/View_Resume-PDF-ff6b6b?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" />
+  </a>
+  <a href="https://github.com/dustinmcafee/resume/raw/main/resume.pdf">
+    <img src="https://img.shields.io/badge/Download-PDF-00d9ff?style=for-the-badge&logo=download&logoColor=white" />
+  </a>
+  <a href="https://github.com/dustinmcafee/resume">
+    <img src="https://img.shields.io/badge/LaTeX_Source-008080?style=for-the-badge&logo=latex&logoColor=white" />
+  </a>
+</p>
 
 ---
 
