@@ -132,22 +132,54 @@ fun_fact: "I contribute code that's preserved in the Arctic for 1000 years"
 
 ## Featured Projects
 
-<p align="center">
-  <a href="https://github.com/rustvnc/rustvncserver">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=rustvnc&repo=rustvncserver&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00d9ff&icon_color=00d9ff&text_color=c9d1d9" />
-  </a>
-  <a href="https://github.com/esm-android/kernel-msm-esm">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=esm-android&repo=kernel-msm-esm&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00d9ff&icon_color=00d9ff&text_color=c9d1d9" />
-  </a>
-</p>
-<p align="center">
-  <a href="https://github.com/dustinmcafee/dongadeuce">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=dustinmcafee&repo=dongadeuce&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00d9ff&icon_color=00d9ff&text_color=c9d1d9" />
-  </a>
-  <a href="https://github.com/dustinmcafee/ESM">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=dustinmcafee&repo=ESM&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00d9ff&icon_color=00d9ff&text_color=c9d1d9" />
-  </a>
-</p>
+<table align="center">
+  <tr>
+    <td width="50%">
+      <h3 align="center">rustvncserver</h3>
+      <p align="center">
+        <a href="https://github.com/rustvnc/rustvncserver">
+          <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white"/>
+        </a>
+        <a href="https://crates.io/crates/rustvncserver">
+          <img src="https://img.shields.io/crates/v/rustvncserver?style=for-the-badge&color=e6522c"/>
+        </a>
+      </p>
+      <p align="center">Pure Rust VNC server library with RFC 6143 compliance, async/await via Tokio, and 11 encoding types</p>
+    </td>
+    <td width="50%">
+      <h3 align="center">kernel-msm-esm</h3>
+      <p align="center">
+        <a href="https://github.com/esm-android/kernel-msm-esm">
+          <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white"/>
+        </a>
+        <img src="https://img.shields.io/badge/Linux_Kernel-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
+      </p>
+      <p align="center">ESM kernel modifications with 4 new syscalls for push-based Android input handling</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3 align="center">dongadeuce</h3>
+      <p align="center">
+        <a href="https://github.com/dustinmcafee/dongadeuce">
+          <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white"/>
+        </a>
+        <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white"/>
+      </p>
+      <p align="center">Commander open-source platform for Android</p>
+    </td>
+    <td width="50%">
+      <h3 align="center">RustVNC</h3>
+      <p align="center">
+        <a href="https://github.com/rustvnc/RustVNC">
+          <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white"/>
+        </a>
+        <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white"/>
+      </p>
+      <p align="center">Android VNC server app with screen sharing, reverse VNC & built-in web client</p>
+    </td>
+  </tr>
+</table>
 
 ---
 
