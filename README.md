@@ -204,10 +204,10 @@ fun_fact: "I contribute code that's preserved in the Arctic for 1000 years"
 ## Resume
 
 <p align="center">
-  <a href="https://github.com/dustinmcafee/resume/blob/main/main.pdf">
+  <a href="https://github.com/dustinmcafee/resume/blob/master/main.pdf">
     <img src="https://img.shields.io/badge/View_Resume-PDF-ff6b6b?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" />
   </a>
-  <a href="https://github.com/dustinmcafee/resume/raw/main/main.pdf">
+  <a href="https://github.com/dustinmcafee/resume/raw/master/main.pdf">
     <img src="https://img.shields.io/badge/Download-PDF-00d9ff?style=for-the-badge&logo=download&logoColor=white" />
   </a>
   <a href="https://github.com/dustinmcafee/resume">
