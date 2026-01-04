@@ -1,6 +1,16 @@
-<h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=00D9FF&center=true&vCenter=true&random=false&width=600&lines=Hey+there!+I'm+Dustin+McAfee;Embedded+Systems+Developer;Android+%26+Low-Level+Enthusiast;Always+Building+Something+Cool" alt="Typing SVG" />
-</h1>
+```
+    ____             __  _          __  ___     ___   ____
+   / __ \__  _______/ /_(_)___     /  |/  /____/   | / __/__  ___
+  / / / / / / / ___/ __/ / __ \   / /|_/ / ___/ /| |/ /_/ _ \/ _ \
+ / /_/ / /_/ (__  ) /_/ / / / /  / /  / / /__/ ___ / __/  __/  __/
+/_____/\__,_/____/\__/_/_/ /_/  /_/  /_/\___/_/  |_/_/  \___/\___/
+
+       Systems Developer | Rust | Android | Kernel Hacker
+```
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=22&duration=4000&pause=1000&color=00D9FF&center=true&vCenter=true&random=false&width=500&lines=Embedded+Systems+Developer;Android+%26+Low-Level+Enthusiast;Open+Source+Contributor;Memory-Safe+Systems+Advocate" alt="Typing SVG" />
+</p>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=dustinmcafee&label=Profile%20Views&color=00d9ff&style=for-the-badge" alt="Profile Views" />
@@ -10,25 +20,39 @@
   <a href="https://crates.io/users/dustinmcafee">
     <img src="https://img.shields.io/badge/crates.io-dustinmcafee-e6522c?style=for-the-badge&logo=rust&logoColor=white" alt="crates.io"/>
   </a>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/Arctic%20Code%20Vault-Contributor-blue?style=for-the-badge&logo=github" alt="Arctic Code Vault" />
+  <a href="https://github.com/FDA/ecglib">
+    <img src="https://img.shields.io/badge/FDA_HIVE_Supercomputer-Contributor-00599C?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0xOSAzSDVjLTEuMSAwLTIgLjktMiAydjE0YzAgMS4xLjkgMiAyIDJoMTRjMS4xIDAgMi0uOSAyLTJWNWMwLTEuMS0uOS0yLTItMnptLTcgMTRsLTUtNSAxLjQxLTEuNDFMMTIgMTQuMTdsNy41OS03LjU5TDIxIDhsLTkgOXoiLz48L3N2Zz4=" alt="FDA HIVE" />
+  </a>
 </p>
 
 ---
 
 ## About Me
 
-```yaml
-name: Dustin McAfee
-location: UTC -05:00
-current_focus:
-  - RustVNC: Memory-safe VNC implementation in Rust
-  - ESM-Android: Push-based event delivery for Android
-  - Android Kernel & Framework Development
-interests:
-  - Systems Programming & Performance Optimization
-  - Low-level Android Internals
-  - Memory-safe Systems with Rust
-fun_fact: "I contribute code that's preserved in the Arctic for 1000 years"
+```bash
+dustin@github:~$ neofetch
+```
+```
+dustin@github                mass_storage
+--------------               ------------
+Name:      Dustin McAfee     OS:      Linux / Android / AOSP
+Role:      Systems Developer Kernel:  Custom MSM builds
+Location:  UTC -05:00        Shell:   bash + rust + kotlin
+                             Uptime:  Contributing since 2015
+
+Current Focus:
+  ├── RustVNC: Memory-safe VNC implementation in Rust
+  ├── ESM-Android: Push-based event delivery for Android
+  └── Android Kernel & Framework Development
+
+Notable Contributions:
+  ├── FDA/ecglib: ECG analysis running on HIVE supercomputer
+  ├── Arctic Code Vault: Code preserved for 1000 years
+  └── crates.io: Published Rust crates
 ```
 
 ---
@@ -184,10 +208,185 @@ fun_fact: "I contribute code that's preserved in the Arctic for 1000 years"
 
 ---
 
+## Code Showcase
+
+<!-- CODE_SHOWCASE_START -->
+<details>
+<summary><b>Rust: VNC Server Library</b> (click to expand)</summary>
+
+<sub><a href="https://github.com/rustvnc/rustvncserver/blob/main/src/lib.rs">View source</a></sub>
+
+```rust
+//! # rustvncserver
+//!
+//! A pure Rust implementation of a VNC (Virtual Network Computing) server.
+//!
+//! This library provides a complete VNC server implementation following the RFB
+//! (Remote Framebuffer) protocol specification (RFC 6143). It supports all major
+//! VNC encodings and pixel formats, with 100% wire-format compatibility with
+//! standard VNC protocol.
+//!
+//! ## Features
+//!
+//! - **11 encoding types**: Raw, `CopyRect`, RRE, `CoRRE`, Hextile, Zlib, `ZlibHex`,
+//!   Tight, `TightPng`, ZRLE, ZYWRLE
+//! - **All pixel formats**: 8/16/24/32-bit color depths
+//! - **Tight encoding**: All 5 production modes (solid fill, mono rect, indexed
+//!   palette, full-color zlib, JPEG)
+//! - **Async I/O**: Built on Tokio for efficient concurrent client handling
+//! - **Memory safe**: Pure Rust with zero unsafe code in core logic
+//! - **Optional `TurboJPEG`**: Hardware-accelerated JPEG compression via feature flag
+//!
+//! ## Quick Start
+//!
+//! ```no_run
+//! use rustvncserver::VncServer;
+//! use rustvncserver::server::ServerEvent;
+//!
+//! #[tokio::main]
+//! async fn main() -> Result<(), Box<dyn std::error::Error>> {
+//!     // Create a VNC server with 1920x1080 framebuffer
+//!     let (server, mut event_rx) = VncServer::new(
+//!         1920,
+//!         1080,
+//!         "My Desktop".to_string(),
+//!         Some("secret".to_string()), // Optional password
+//!     );
+//!
+//!     // Handle events from clients in a background task
+//!     tokio::spawn(async move {
+//!         while let Some(event) = event_rx.recv().await {
+//!             match event {
+
+// Public API
+pub mod error;
+pub mod events;
+pub mod framebuffer;
+// ... (see full source)
+```
+</details>
+
+<details>
+<summary><b>C: ESM Kernel Module</b> (click to expand)</summary>
+
+<sub><a href="https://github.com/esm-android/kernel-msm-esm/blob/esm/kernel/esm.c">View source</a></sub>
+
+```c
+/*
+ * ESM (Event Stream Model) - Push-based event delivery for Android
+ *
+ * Replaces polling-based event handling with direct event push to applications.
+ * This reduces latency and power consumption by eliminating polling loops.
+ *
+ * Copyright (C) 2025
+ *
+ * Based on research by Stephen Marz and Brad Vander Zanden, University of Tennessee
+ */
+
+#include <linux/kernel.h>
+#include <linux/syscalls.h>
+#include <linux/slab.h>
+#include <linux/spinlock.h>
+#include <linux/wait.h>
+#include <linux/sched.h>
+#include <linux/sched/signal.h>
+#include <linux/kfifo.h>
+#include <linux/input.h>
+#include <linux/uaccess.h>
+#include <linux/hashtable.h>
+#include <linux/fs.h>
+#include <linux/file.h>
+#include <uapi/linux/esm.h>
+
+/* ESM constants */
+#define ESM_EVENT_QUEUE_SIZE    256     /* Events per registered device */
+#define ESM_MAX_DEVICES         32      /* Max input devices per process */
+#define ESM_HASH_BITS           6       /* Hash table size for device lookup */
+
+/*
+ * Global list of all ESM contexts (for esm_push_event reverse lookup)
+ * Protected by esm_global_lock
+ *
+ * TODO: Optimize by adding ESM context pointer directly to task_struct
+ */
+static LIST_HEAD(esm_context_list);
+static DEFINE_SPINLOCK(esm_global_lock);
+
+/*
+ * ESM device registration structure
+ *
+ * Each registered input device gets one of these.
+ * Uses kfifo for event queue (fixes Android 7 linked-list jitter issue).
+// ... (see full source)
+```
+</details>
+
+<details>
+<summary><b>C++: ECG T-Wave Analysis</b> (click to expand)</summary>
+
+<sub><a href="https://github.com/FDA/ecglib/blob/master/ecglib/src/delineators/twave/ecglib/delineator/twave/twaveDelineator.cpp">View source</a></sub>
+
+```cpp
+/**
+ * @file delineators/twave/ecglib/delineator/twave/twaveDelineator.cpp
+ * @author Meisam Hosseini <meisam.hosseini@fda.hhs.gov>
+ * @author Jose Vicente <jose.vicenteruiz@fda.hhs.gov>
+ * @author Lars Johannesen <lars.johannesen@fda.hhs.gov>
+ * @author Dustin C McAfee <dustin.mcafee@fda.hhs.gov
+ *
+ * @version 1.0.0
+ *
+ * @section LICENSE
+ * ecglib is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License (GNU LGPL3), or (at your option) any later version.
+ * ecglib is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more details.
+ * You should have received a copy of the GNU Lesser General Public License along with this program.  If not, see http://www.gnu.org/licenses/.
+ *
+ * @section DISCLAIMER
+ * ecglib software and documentation were developed by the authors in their capacities as  Oak Ridge Institute for Science and Education (ORISE) research fellows at the U.S. Food and Drug Administration (FDA). .
+ * FDA assumes no responsibility whatsoever for use by other parties of the Software, its source code, documentation or compiled executables, and makes no guarantees, expressed or implied, about its quality, reliability, or any other characteristic.  Further, FDA makes no representations that the use of the Software will not infringe any patent or proprietary rights of third parties.   The use of this code in no way implies endorsement by the FDA or confers any advantage in regulatory decisions.
+ *
+ * @section DESCRIPTION
+ * General input/output data to/form twaveDelineator
+ */
+#include <functional> // make_tuple
+#include "delineate.hpp"
+#ifdef ECGLIB_PREPROCESSORS
+#include <ecglib/preprocessors/filters.hpp>
+#endif
+#include <ecglib/delineator/twave/twaveDelineator.hpp>
+#include <boost/algorithm/string.hpp>
+#include <boost/any.hpp>
+namespace ecglib {
+    // prepartion of thresholds of classification rules based on decision tree
+	// Input is an '_' separated string of thresholds and output is vector of thresholds
+	std::vector<std::vector<double> > featursThresholdPreparation(std::string thresholds); // function prototype
+	// main entrance into twaveDelineator for calculating twave annotations
+	std::tuple<pointmap, ecglib::twaveDelineate::annotation> twaveDelineators(const ecglib::ecgdata &e, const ecglib::pointmap &pmin, const ecglib::twaveDelineator_config &cfg) {
+		if(e.fs() != 1000){ // check the valid frequency
+			std::string line = std::string("frequency should be 1000Hz");
+			std::cerr << line;
+			throw std::logic_error(line);
+		}
+		ecglib::ecgdata ecg(e);		// internal ecg variable
+		ecglib::pointmap pm(pmin);	// internal annotation variable
+		int vcgIndex (0);		// index of VCG inside ecgdata
+		arma::vec filt = zeros<vec>(1);	// filter instantiation
+		vcgIndex = ecg.leadnum(ecglead::VCGMAG); // index of VCG
+// ... (see full source)
+```
+</details>
+<!-- CODE_SHOWCASE_END -->
+
+---
+
 ## Contribution Graph
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=dustinmcafee&bg_color=0D1117&color=00d9ff&line=00d9ff&point=ff6b6b&area=true&area_color=00d9ff&hide_border=true" />
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/dustinmcafee/dustinmcafee/output/github-snake-dark.svg" alt="Snake animation" />
 </p>
 
 ---
