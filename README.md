@@ -33,26 +33,20 @@
 
 ## About Me
 
-```bash
-dustin@github:~$ neofetch
-```
-```
-dustin@github                mass_storage
---------------               ------------
-Name:      Dustin McAfee     OS:      Linux / Android / AOSP
-Role:      Systems Developer Kernel:  Custom MSM builds
-Location:  UTC -05:00        Shell:   bash + rust + kotlin
-                             Uptime:  Contributing since 2015
+```yaml
+name: Dustin McAfee
+role: Systems Developer
+location: UTC -05:00
 
-Current Focus:
-  ├── RustVNC: Memory-safe VNC implementation in Rust
-  ├── ESM-Android: Push-based event delivery for Android
-  └── Android Kernel & Framework Development
+current_focus:
+  - RustVNC: Memory-safe VNC implementation in Rust
+  - ESM-Android: Push-based event delivery for Android
+  - Android Kernel & Framework Development
 
-Notable Contributions:
-  ├── FDA/ecglib: ECG analysis running on HIVE supercomputer
-  ├── Arctic Code Vault: Code preserved for 1000 years
-  └── crates.io: Published Rust crates
+notable_contributions:
+  - FDA/ecglib: ECG analysis running on HIVE supercomputer
+  - Arctic Code Vault: Code preserved for 1000 years
+  - crates.io: Published Rust crates
 ```
 
 ---
