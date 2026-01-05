@@ -87,12 +87,12 @@ notable_contributions:
 ## GitHub Stats
 
 <p align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=dustinmcafee&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00d9ff&icon_color=00d9ff&text_color=c9d1d9" />
-  <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=dustinmcafee&theme=tokyonight&hide_border=true&background=0D1117&stroke=00d9ff&ring=00d9ff&fire=ff6b6b&currStreakLabel=00d9ff" />
+  <img width="49%" src="https://github-readme-stats-ntfuwwzpq-dustin-mcafees-projects.vercel.app/api?username=dustinmcafee&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00d9ff&icon_color=00d9ff&text_color=c9d1d9" />
+  <img width="49%" src="https://github-readme-streak-stats-2tfda15pr-dustin-mcafees-projects.vercel.app/?user=dustinmcafee&theme=tokyonight&hide_border=true&background=0D1117&stroke=00d9ff&ring=00d9ff&fire=ff6b6b&currStreakLabel=00d9ff" />
 </p>
 
 <p align="center">
-  <img width="40%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dustinmcafee&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00d9ff&text_color=c9d1d9" />
+  <img width="40%" src="https://github-readme-stats-ntfuwwzpq-dustin-mcafees-projects.vercel.app/api/top-langs/?username=dustinmcafee&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00d9ff&text_color=c9d1d9" />
 </p>
 
 ---
