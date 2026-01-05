@@ -379,9 +379,11 @@ namespace ecglib {
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=dustinmcafee&bg_color=0D1117&color=00d9ff&line=00d9ff&point=ff6b6b&area=true&area_color=00d9ff&hide_border=true" />
 </p>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/dustinmcafee/dustinmcafee/output/github-snake-dark.svg" alt="Snake animation" />
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dustinmcafee/dustinmcafee/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dustinmcafee/dustinmcafee/output/github-snake.svg" />
+  <img alt="Snake animation" src="https://raw.githubusercontent.com/dustinmcafee/dustinmcafee/output/github-snake.svg" />
+</picture>
 
 ---
 
