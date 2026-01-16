@@ -185,7 +185,7 @@ notable_contributions:
         </a>
         <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white"/>
       </p>
-      <p align="center">Commander open-source platform for Android</p>
+      <p align="center">Commander open-source platform for Windows, Mac, Linux, and Android</p>
     </td>
     <td width="50%">
       <h3 align="center">RustVNC</h3>
