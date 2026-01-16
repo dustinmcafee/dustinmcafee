@@ -100,7 +100,7 @@ notable_contributions:
 ## GitHub Trophies
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=dustinmcafee&theme=discord&no-frame=true&no-bg=true&column=7&margin-w=15" />
+  <img src="https://github-profile-trophy-three-sage.vercel.app/?username=dustinmcafee&theme=discord&no-frame=true&no-bg=true&column=7&margin-w=15" />
 </p>
 
 ---
