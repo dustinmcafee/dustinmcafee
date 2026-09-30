@@ -206,58 +206,9 @@ notable_contributions:
 
 <!-- CODE_SHOWCASE_START -->
 <details>
-<summary><b>Rust: VNC Server Library</b> (click to expand)</summary>
+<summary><b>Rust: VNC Server Library</b></summary>
 
-<sub><a href="https://github.com/rustvnc/rustvncserver/blob/main/src/lib.rs">View source</a></sub>
-
-```rust
-//! # rustvncserver
-//!
-//! A pure Rust implementation of a VNC (Virtual Network Computing) server.
-//!
-//! This library provides a complete VNC server implementation following the RFB
-//! (Remote Framebuffer) protocol specification (RFC 6143). It supports all major
-//! VNC encodings and pixel formats, with 100% wire-format compatibility with
-//! standard VNC protocol.
-//!
-//! ## Features
-//!
-//! - **11 encoding types**: Raw, `CopyRect`, RRE, `CoRRE`, Hextile, Zlib, `ZlibHex`,
-//!   Tight, `TightPng`, ZRLE, ZYWRLE
-//! - **All pixel formats**: 8/16/24/32-bit color depths
-//! - **Tight encoding**: All 5 production modes (solid fill, mono rect, indexed
-//!   palette, full-color zlib, JPEG)
-//! - **Async I/O**: Built on Tokio for efficient concurrent client handling
-//! - **Memory safe**: Pure Rust with zero unsafe code in core logic
-//! - **Optional `TurboJPEG`**: Hardware-accelerated JPEG compression via feature flag
-//!
-//! ## Quick Start
-//!
-//! ```no_run
-//! use rustvncserver::VncServer;
-//! use rustvncserver::server::ServerEvent;
-//!
-//! #[tokio::main]
-//! async fn main() -> Result<(), Box<dyn std::error::Error>> {
-//!     // Create a VNC server with 1920x1080 framebuffer
-//!     let (server, mut event_rx) = VncServer::new(
-//!         1920,
-//!         1080,
-//!         "My Desktop".to_string(),
-//!         Some("secret".to_string()), // Optional password
-//!     );
-//!
-//!     // Handle events from clients in a background task
-//!     tokio::spawn(async move {
-//!         while let Some(event) = event_rx.recv().await {
-//!             match event {
-
-// Public API
-pub mod error;
-pub mod events;
-pub mod framebuffer;
-// ... (see full source)
-```
+<a href="https://github.com/rustvnc/rustvncserver/blob/main/src/lib.rs">View source on GitHub</a>
 </details>
 
 <details>
